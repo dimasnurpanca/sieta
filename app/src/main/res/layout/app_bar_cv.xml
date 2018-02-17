@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.dnp.sieta.ui.CVActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_marginTop="200dp"
+            android:textStyle="bold"
+            android:id="@+id/statu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CV Bulan Ini:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:padding="5dp"
+            />
+        <TextView
+            android:textStyle="bold"
+            android:layout_below="@+id/statu2"
+            android:id="@+id/statu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/warnaLight"
+            android:text="1.839"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:padding="5dp"
+            />
+        <Button
+            android:layout_below="@+id/statu3"
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat Detail CV"
+            android:background="@color/warnaDark"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:onClick="direct"
+            />
+        <Button
+            android:layout_below="@+id/btn2"
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request CV"
+            android:background="@color/warnaDark"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

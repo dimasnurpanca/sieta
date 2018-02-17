@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SIETA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string-array name="brew_array">
+        <item>Jakarta Pusat</item>
+        <item>Bandung</item>
+        <item>Bogor</item>
+        <item>Yogyakarta</item>
+    </string-array>
+    <string-array name="kategori_array">
+        <item>Detox your body</item>
+        <item>Skincare</item>
+        <item>Diet Products</item>
+        <item>paket detoks</item>
+        <item>paket diet</item>
+        <item>Merchandise EtA</item>
+        <item>Business Tools</item>
+    </string-array>
+    <string-array name="komunitas_array">
+        <item>Mingguan</item>
+        <item>Dwi Mingguan</item>
+        <item>Bulanan</item>
+    </string-array>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.dnp.sieta.ui.MegaOrganizerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT DATE"
+            android:onClick="direct2"
+            android:id="@+id/btn_date"
+            android:background="@color/warnaDark"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_below="@+id/btn_date"
+            android:id="@+id/statu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/primary_text"
+            android:text="1 Januari 2018"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_below="@+id/statu3"
+            android:id="@+id/statu4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/primary_text"
+            android:text="Tidak ada jadwal ditanggal ini"
+            android:padding="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:onClick="direct"
+            android:tint="@color/warnaDark"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_add_circle_outline" />
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

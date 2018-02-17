@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.dnp.sieta.ui.VideoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/tablayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="keluhan"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/static_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cari"
+                android:background="@color/warnaDark"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tablayout1"
+            android:id="@+id/tablayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/video1"
+                android:onClick="direct"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/video2"
+                android:onClick="direct"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/tablayout"
+            android:id="@+id/tablayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/video3"
+                android:onClick="direct"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/video4"
+                android:onClick="direct"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

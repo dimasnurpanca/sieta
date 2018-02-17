@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.dnp.sieta.ui.KomunitasActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgrounds">
+
+        <TextView
+            android:layout_marginTop="200dp"
+            android:id="@+id/statu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Jaring sebanyak mungkin orang-orang yang ingin merasakan hidup sehat dengan Synergy melalui ETA Komunitas. Buat Health Party Anda sekarang"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:padding="5dp"
+            />
+        <Button
+            android:layout_below="@+id/statu2"
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajukan Health Party"
+            android:background="@color/warnaLight"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:onClick="direct"
+            />
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

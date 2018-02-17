@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.dnp.sieta.ui.MyAccountActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:id="@+id/textViewheader"
+            android:padding="15dp"
+            />
+        <RelativeLayout
+            android:layout_below="@+id/textViewheader"
+            android:id="@+id/susi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_susi"
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/susi1"
+            android:id="@+id/rina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/tablayouts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Susi Similikiti"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    android:id="@+id/textView"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No.Member : 1092883723"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:id="@+id/textView1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No.Sponsor : 1092883671"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat : Jl.OTISTA III KP.PASAREAN RT.002 RW.011 KEC.CIANJU - JAWA BARAT"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tgl Lahir : "
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No.HP : 0812190001010"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email : susi.similikit@ymail.com"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NPWP :"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tgl Join : 12/04/2013"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/rina"
+            android:id="@+id/rina2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/tablayouts2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Pengiriman"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    android:id="@+id/textView2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Susi Similikiti"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:id="@+id/textView12"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat : Jl.OTISTA III KP.PASAREAN RT.002 RW.011 KEC.CIANJU - JAWA BARAT"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No.HP : 0812190001010"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

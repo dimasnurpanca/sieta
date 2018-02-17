@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.dnp.sieta.ui.MegaConsultationDownlineDetail2Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below="@+id/line"
+            android:id="@+id/susi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="January 2018"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/secondary_text"
+                android:textStyle="bold"
+                android:id="@+id/textViewa"
+                android:layout_centerHorizontal="true"
+                />
+
+            <LinearLayout
+                android:layout_below="@+id/textViewa"
+                android:id="@+id/tablayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minggu Pertama"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    android:id="@+id/textView"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Target bulan ini :"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:id="@+id/textView1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mencapai peringkat Gold"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mempunyai 1 orang Mega Four"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Memiliki 5 orang member baru dan aktif"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Omzet 20 juta"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/tablayouts"
+                android:id="@+id/tablayouts2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar Mahkota"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    android:id="@+id/textView2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asep Sunarya"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:id="@+id/textView12"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budi Nasrudin"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ike Majalengka"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/tablayouts2"
+                android:id="@+id/tablayouts3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jadwal Bulan Ini"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    android:id="@+id/textView23"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02-03-18"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:id="@+id/textView123"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

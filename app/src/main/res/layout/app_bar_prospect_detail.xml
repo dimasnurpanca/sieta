@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.dnp.sieta.ui.ProspectDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/tablayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="New Prospect"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="List"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="0dp"
+                android:text="Chat"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <View
+            android:id="@+id/line"
+            android:layout_below="@+id/tablayout"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#d13033"/>
+        <RelativeLayout
+            android:layout_below="@+id/line"
+            android:id="@+id/susi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_susi"
+                />
+
+            <LinearLayout
+                android:id="@+id/tablayouts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/image"
+                android:layout_toEndOf="@id/image"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Susi"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    android:id="@+id/textView"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat : "
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:id="@+id/textView1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tgl Lahir : "
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. HP : 0812190001010"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email : susi.similikiti@ymail.com"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NPWP : "
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tgl Join : 12/04/2013"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/susi1"
+            android:id="@+id/rina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prospect Screening"
+                android:textColor="@color/secondary_text"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/rina"
+            android:id="@+id/susi12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kesehatan"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/secondary_text"
+                android:textStyle="bold"
+                android:id="@+id/textView22"
+                android:layout_marginLeft="10dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/tablayouts22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/textView22"
+                android:layout_toEndOf="@id/textView22"
+                android:layout_marginLeft="90dp"
+                android:layout_marginStart="90dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perokok"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obesitas"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menjalankan Program Diem"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak alkohol"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak Alergi"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emosi Stabil"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gairah Normal"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak menanti anak"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tinggi 153cm, berat 57kg"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/susi12"
+            android:id="@+id/rina2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keuangan"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/secondary_text"
+                android:textStyle="bold"
+                android:id="@+id/textView222"
+                android:layout_marginLeft="10dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/tablayouts222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/textView222"
+                android:layout_toEndOf="@id/textView222"
+                android:layout_marginLeft="90dp"
+                android:layout_marginStart="90dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$$$"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_below="@+id/rina2"
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Follow Up"
+            android:background="@color/warnaDark"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_below="@+id/btn1"
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Behavior"
+            android:background="@android:color/darker_gray"
+            android:textColor="@color/primary_text"
+            />
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

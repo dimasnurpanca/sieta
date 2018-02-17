@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.dnp.sieta.ui.ProspectActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/tablayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="New Prospect"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="List"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="0dp"
+                android:text="Chat"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <View
+            android:id="@+id/line"
+            android:layout_below="@+id/tablayout"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#d13033"/>
+    <RelativeLayout
+        android:layout_below="@+id/line"
+        android:id="@+id/susi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:onClick="direct">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_susi"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Susi"
+            android:textColor="@color/secondary_text"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:layout_toRightOf="@id/image"
+            android:layout_toEndOf="@id/image"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/susi1"
+            android:id="@+id/rina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:onClick="direct">
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_susi" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rina"
+                android:textColor="@color/secondary_text"
+                android:textStyle="bold"
+                android:id="@+id/textView2"
+                android:layout_toRightOf="@id/image2"
+                android:layout_toEndOf="@id/image2"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/rina"
+            android:id="@+id/tuti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:onClick="direct">
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_susi" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuti"
+                android:textColor="@color/secondary_text"
+                android:textStyle="bold"
+                android:id="@+id/textView3"
+                android:layout_toRightOf="@id/image3"
+                android:layout_toEndOf="@id/image3"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

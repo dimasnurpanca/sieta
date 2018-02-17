@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.dnp.sieta.ui.MegaConsultationDownlineDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below="@+id/line"
+            android:id="@+id/susi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_susi"
+                />
+
+            <LinearLayout
+                android:id="@+id/tablayouts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/image"
+                android:layout_toEndOf="@id/image"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Susi"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold"
+                    android:id="@+id/textView"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. Member : 1092883723"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:id="@+id/textView1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. Sponsor : 1092883671"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. HP : 0812190001010"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peringkat : Silver"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    />
+                <Button
+                    android:id="@+id/btn1"
+                    android:onClick="direct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Jadwal Bisnis"
+                    android:background="@color/warnaDark"
+                    android:textColor="@color/white"
+                    />
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ajukan Konseling"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@color/primary_text"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
